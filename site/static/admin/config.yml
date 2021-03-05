@@ -17,6 +17,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
+    create: true
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
@@ -40,6 +41,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
+        create: true
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Logo, name: logo, widget: image}
@@ -57,6 +59,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/products/_index.md"
         label: "Products Page"
         name: "products"
+        create: true
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
@@ -70,6 +73,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/values/_index.md"
         label: "Values Page"
         name: "values"
+        create: true
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
